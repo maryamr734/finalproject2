@@ -2,8 +2,8 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Slider from "react-slick";
-import { WishlistContext } from '../../Context/Wishlistcontext';
-import { CartContext } from '../../Context/CartContext';
+import { WishlistContext } from '../../Contexts/Wishlistcontext';
+import { CartContext } from '../../Contexts/CartContext';
 import toast from 'react-hot-toast';
 
 export default function Details() {

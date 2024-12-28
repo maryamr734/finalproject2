@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { CartContext } from '../../Context/CartContext';
+import { CartContext } from '../../Contexts/CartContext';
 
 export default function AllOrders({ isModal, setIsModal }) {
   const [orderDetails, setOrderDetails] = useState(null);

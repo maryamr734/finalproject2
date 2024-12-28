@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import { WishlistContext } from '../../Context/Wishlistcontext'
-import { CartContext } from '../../Context/CartContext'
+import { WishlistContext } from '../../Contexts/Wishlistcontext'
+import { CartContext } from '../../Contexts/CartContext'
 
 
 import toast from 'react-hot-toast'

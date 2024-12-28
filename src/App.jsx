@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import UserContextProvider from './context/UserContext';
-import CounterContextProvider from './context/CounterContext';
+import UserContextProvider from './Contexts/UserContext';
+import CounterContextProvider from './Contexts/CounterContext';
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
@@ -15,12 +15,12 @@ import Wishlist from './components/Wishlist/Wishlist';
 import Brands from './components/Brands/Brands';
 import 'font-awesome/css/font-awesome.min.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import CartContextProvider from './context/CartContext';
+import CartContextProvider from './Contexts/CartContext';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import Checkout from './components/Checkout/Checkout';
 import { Toaster } from 'react-hot-toast';
 
-import WishlistContextProvider from './context/WishlistContext';
+import WishlistContextProvider from './Contexts/Wishlistcontext';
 import ForgetPassword from './components/ForgetPassword/ForgetPassword';
 import VerifyResetCode from './components/VerifyResetCode/VerifyResetCode';
 import ResetPassword from './components/ResetPassword/ResetPassword';

@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { UserContext } from '../../context/UserContext';
-import { CartContext } from '../../context/CartContext';
+import { UserContext } from '../../Contexts/UserContext';
+import { CartContext } from '../../Contexts/CartContext';
 
 export default function Navbar() {
   const navigate = useNavigate();

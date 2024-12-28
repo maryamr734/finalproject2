@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { useFormik } from 'formik';
-import { CartContext } from '../../Context/CartContext';
+import { CartContext } from '../../Contexts/CartContext';
 
 export default function Checkout() {
   const [loading, setLoading] = useState(false);
