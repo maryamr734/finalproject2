@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { CounterContext } from '../../Context/Countercontext'
+import { CounterContext } from '../../context/CounterContext'
 import RecentProducts from '../RecentProducts/RecentProducts'
 import CategoriesSlider from '../CategoriesSlider/CategoriesSlider'
 import MainSlider from  '../MainSlider/MainSlider'

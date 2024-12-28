@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Slider from "react-slick";
 import { WishlistContext } from '../../Context/Wishlistcontext';
-import { Cartcontext } from '../../Context/Cartcontext';
+import { CartContext } from '../../Context/CartContext';
 import toast from 'react-hot-toast';
 
 export default function Details() {
@@ -24,7 +24,7 @@ export default function Details() {
   const [isWishListed, setIsWishListed] = useState(false); // Track wishlist status
 
   // Context for Cart and Wishlist
-  let { addProductToCart, setNumOfCartItems } = useContext(Cartcontext);
+  let { addProductToCart, setNumOfCartItems } = useContext(CartContext);
   let { addToWishList, removeWishListItem, getWishListItems, wishList } = useContext(WishlistContext);
 
   // Fetch product details by product ID

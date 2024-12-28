@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { WishlistContext } from '../../Context/Wishlistcontext'
-import { Cartcontext } from '../../Context/Cartcontext'
-import axios from 'axios'
+import { CartContext } from '../../Context/CartContext'
 
 
 import toast from 'react-hot-toast'
@@ -17,7 +16,7 @@ export default function Wishlist() {
 
     const [wishListDetails, setWishListDetails] = useState(null);
     let { getWishListItems, removeWishListItem, wishList, setWishList } = useContext(WishlistContext);
-    let { addProductToCart } = useContext(Cartcontext);
+    let { addProductToCart } = useContext(CartContext);
 
     async function getWishList() {
         let res = await getWishListItems();

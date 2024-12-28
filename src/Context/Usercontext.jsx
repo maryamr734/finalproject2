@@ -2,8 +2,6 @@ import React, { createContext, useState, useEffect } from 'react';
 import ForgetPassword from '../components/ForgetPassword/ForgetPassword';
 
 import axios from 'axios';
-import VerifyResetCode from '../components/VerifyResetCode/VerifyResetCode';
-import ResetPassword from '../components/ResetPassword/ResetPassword';
 axios
 ForgetPassword
 

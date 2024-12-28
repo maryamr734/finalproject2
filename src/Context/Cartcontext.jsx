@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { createContext, useState } from "react";
 useState
 
-export let Cartcontext = createContext();
+export const CartContext = createContext();
 
 export default function CartContextProvider(props) {
 
@@ -135,8 +135,8 @@ getCart()
 
   return (
 
-  <Cartcontext.Provider value={{ setCartInfo ,CartInfo,  getUserOrders,checkoutSession , clearCart , Cart ,setCart   ,deleteProductItem ,  getLoggedUserCart , addProductToCart , updateCartitemCount , checkOut ,}}>
+  <CartContext.Provider value={{ setCartInfo ,CartInfo,  getUserOrders,checkoutSession , clearCart , Cart ,setCart   ,deleteProductItem ,  getLoggedUserCart , addProductToCart , updateCartitemCount , checkOut ,}}>
       {props.children}
-    </Cartcontext.Provider>
+    </CartContext.Provider>
   );
 }

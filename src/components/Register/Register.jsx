@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from '../../Context/Usercontext'; // Correctly import UserContext
+import { UserContext } from '../../Context/UserContext'; // Correctly import UserContext
 
 export default function Register() {
   const { setuserlogin } = useContext(UserContext); // Accessing setuserlogin correctly

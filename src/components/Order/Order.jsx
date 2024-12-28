@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { Cartcontext } from '../../Context/Cartcontext';
+import { CartContext } from '../../Context/CartContext';
 
 export default function AllOrders({ isModal, setIsModal }) {
   const [orderDetails, setOrderDetails] = useState(null);
-  const { getUserOrders } = useContext(Cartcontext);
+  const { getUserOrders } = useContext(CartContext);
 
   // Fetch orders when component mounts
   async function getOrders() {

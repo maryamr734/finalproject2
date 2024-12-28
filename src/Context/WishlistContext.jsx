@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createContext, useState } from "react";
 
-export let WishlistContext = createContext();
+export const WishlistContext = createContext();
 
 export default function WishlistContextProvider(props) {
     const headers = {
