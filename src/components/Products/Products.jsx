@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ClipLoader from "react-spinners/ClipLoader";
 
-import useProducts from '../../hooks/useProducts';
+import useProducts from '../../Hooks/useProducts';
 
 
 
