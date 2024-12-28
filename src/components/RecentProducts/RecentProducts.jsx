@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import ClipLoader from "react-spinners/ClipLoader";
 import { CartContext } from '../../Contexts/CartContext';
 import toast from 'react-hot-toast';
-import { WishlistContext } from '../../Contexts/Wishlistcontext';
+import { WishlistContext } from '../../Contexts/WishlistContext';
 WishlistContext
 
 useContext 

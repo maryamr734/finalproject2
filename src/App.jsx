@@ -20,7 +20,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import Checkout from './components/Checkout/Checkout';
 import { Toaster } from 'react-hot-toast';
 
-import WishlistContextProvider from './Contexts/Wishlistcontext';
+import WishlistContextProvider from './Contexts/WishlistContext';
 import ForgetPassword from './components/ForgetPassword/ForgetPassword';
 import VerifyResetCode from './components/VerifyResetCode/VerifyResetCode';
 import ResetPassword from './components/ResetPassword/ResetPassword';
