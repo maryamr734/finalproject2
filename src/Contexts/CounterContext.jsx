@@ -1,9 +1,7 @@
 import { createContext, useState } from "react";
-import Home from "../components/Home/Home";
-import Products from "../components/Products/Products";
 
 
-  export let CounterContext=createContext(0);
+  export const CounterContext = createContext(0);
 
 
   export default function CounterContextProvider(props){

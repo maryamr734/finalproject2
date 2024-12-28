@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { useFormik } from 'formik';
-import { Cartcontext } from '../../Context/Cartcontext';
+import { CartContext } from '../../Contexts/CartContext';
 
 export default function Checkout() {
   const [loading, setLoading] = useState(false);
-  const { checkOut } = useContext(Cartcontext);
+  const { checkOut } = useContext(CartContext);
 
   // Handle CheckOut 
   async function handleCheckout(cartId, url) {

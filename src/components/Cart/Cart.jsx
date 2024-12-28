@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Cartcontext } from '../../Context/Cartcontext';
+import { CartContext } from '../../Contexts/CartContext';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast'; // Make sure you have this import
 
 export default function Cart() {
-  const { getLoggedUserCart, updateCartitemCount, deleteProductItem  , setCart} = useContext(Cartcontext);
+  const { getLoggedUserCart, updateCartitemCount, deleteProductItem  , setCart} = useContext(CartContext);
   const [CartDetails, setCartDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 

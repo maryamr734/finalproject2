@@ -4,9 +4,9 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ClipLoader from "react-spinners/ClipLoader";
-import { Cartcontext } from '../../Context/Cartcontext';
+import { CartContext } from '../../Contexts/CartContext';
 import toast from 'react-hot-toast';
-import { WishlistContext } from '../../Context/Wishlistcontext';
+import { WishlistContext } from '../../Contexts/WishlistContext';
 WishlistContext
 
 useContext 
@@ -16,12 +16,12 @@ Link
 
 
 export default function RecentProducts() {
-let{addProductToCart,setCart}=useContext(Cartcontext)
+let{addProductToCart,setCart}=useContext(CartContext)
 const[loading,setisLoading]=useState(false)
 const[currentProductId,setcurrentProductId]=useState(0)
 
 
-let { addToCard, setNumOfCartItems } = useContext(Cartcontext);
+let { addToCard, setNumOfCartItems } = useContext(CartContext);
 
 const [isWishListed, setIsWishListed] = useState(true);
 
